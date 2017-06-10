@@ -38,7 +38,8 @@ export default class DynamicListRow extends Component {
   }
 
   componentWillUpdate() {
-    LayoutAnimation.spring();
+    //LayoutAnimation.spring();
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
   }
 
   onRemoving(callback) {
